@@ -2,9 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http_equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="./styles.css">
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h2 class="header_title">Rock Paper Scissors</h2>
+    </header>
+    <main class="main_container">
+      <div class="main_container_card">
+        <div class="main_container_card_title">
+          <img id="user" src="./images/user_icon.png" alt="">
+          <p>USER</p>
+          <p id="points_user">0</p>
+        </div>
+        <div class="main_container_img">
+          <img src="./images/vs_icon.png" alt="">
+      </div>
+
+      <div class="main_container_card_title">
+          <img id="cpu" src="./images/cpu.png" alt="">
+          <p>CPU</p>
+          <p id="points_cpu">0</p>
+      </div>
+  </div>
+  <div class="container_options">
+      <div class="container_options_img">
+          <div class="container_options_option">
+              <button id="Rock" class="container_options_button"></button>
+
+          </div>
+
+          <div class="container_options_option">
+              <button id="Paper" class="container_options_button"></button>
+
+          </div>
+
+          <div class="container_options_option">
+              <button id="Scissors" class="container_options_button"></button>
+
+          </div>
+      </div>
+      <div class="instructions">
+          <p>Choose your weapon!</p>
+      </div>
+  </div>
+
+  <div class="container_button">
+      <button id="begin_round">Begin Round</button>
+  </div>
+      </div>
+    </main>
+    <script src="./game.js"></script>
+  </body>
 </html>
